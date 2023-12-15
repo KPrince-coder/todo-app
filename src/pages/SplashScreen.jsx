@@ -21,7 +21,7 @@ const SplashScreen = () => {
 
 			<div className="flex flex-col items-center gap-y-6">
 				<Logo />
-				<div className="prose prose-h1:font-montserrat prose-p:font-droid-sans space-y-8 text-center">
+				<div className="prose space-y-8 text-center prose-h1:font-montserrat prose-p:font-droid-sans">
 					<h1 className=" mb-0 text-6xl font-bold text-stone-900">
 						Welcome!
 					</h1>
