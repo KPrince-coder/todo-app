@@ -12,13 +12,8 @@
 @tailwind utilities;
 
 @layer components {
-	.bg-gradient {
-		background-image: radial-gradient(
-			circle at 50% 50%,
-			rgba(210, 201, 253, 1) 0%,
-			rgba(255, 255, 255, 1) 50%,
-			rgba(183, 163, 240, 1) 100%
-		);
+	.button {
+		@apply mt-4 w-full rounded-md bg-violet-600 py-[10px] text-lg text-gray-100 shadow-lg transition duration-300 hover:bg-stone-800 hover:text-gray-200;
 	}
 }
 
@@ -37,13 +32,13 @@
 
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
-	/* background-color: #242424; */
-	background-image: radial-gradient(
+	background-color: #242424;
+	/* background-image: radial-gradient(
 		circle at 50% 50%,
 		rgba(210, 201, 253, 1) 0%,
 		rgba(255, 255, 255, 1) 50%,
 		rgba(183, 163, 240, 1) 100%
-	);
+	); */
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
