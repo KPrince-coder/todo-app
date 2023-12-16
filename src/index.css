@@ -11,16 +11,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-	.button {
-		@apply mt-4 block w-full rounded-md bg-violet-600 py-[10px] text-lg text-gray-100 no-underline shadow-lg transition duration-300 hover:bg-stone-800 hover:text-gray-200;
-	}
-}
-
 @layer base {
 	[type='text'],
 	[type='password'] {
 		@apply w-full rounded-md bg-slate-100 font-montserrat text-lg font-medium shadow-sm transition duration-200 placeholder:opacity-70 hover:shadow-md focus:ring-1 focus:ring-violet-600;
+	}
+}
+
+@layer components {
+	.button {
+		@apply mt-4 block w-full rounded-md bg-violet-600 py-[10px] text-lg text-gray-100 no-underline shadow-lg transition duration-300 hover:bg-stone-800 hover:text-gray-200;
 	}
 }
 
@@ -63,11 +63,7 @@ body {
 	/* min-width: 320px; */
 	/* min-width: 100%; */
 	min-height: 100vh;
-}
-
-h1 {
-	font-size: 3.2em;
-	line-height: 1.1;
+	overflow-x: hidden;
 }
 
 @media (prefers-color-scheme: light) {
